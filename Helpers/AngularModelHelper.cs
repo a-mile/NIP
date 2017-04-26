@@ -53,7 +53,7 @@ namespace NIP.Helpers
 
             return new HtmlString("<li class=\"list-group-item\">" +
                                 "<label>" + (metadata.DisplayName ?? name) + "</label>" +
-                                "<div>" + "{{" + expression + "}}" + "</div>"
+                                "<input ng-model='"+expression + "' class='form-control'/>"
                                 + "</li>");
 										
         }

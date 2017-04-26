@@ -9,7 +9,6 @@
             <label>KRS/REGON/NIP</label>
             <input type="text" ng-model="vm.key" class="form-control" name="key"/>
         </div>
-
         <button type="submit" class="btn btn-default">Pobierz dane</button>
     </form>    
     <div ng-show="vm.showResult" class="result">
@@ -17,9 +16,7 @@
             <div class = "alert alert-danger">
 				{{vm.message}}
             </div>
-		</div>
-        <span ng-show="vm.business != null"> 
-            @Html.Angular().ListGroupForModel("vm.business")          
-        </span>
+		</div>        
+        @Html.Angular().ListGroupForModel("vm.business")          
     </div>    
 </div>

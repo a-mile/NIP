@@ -5,9 +5,6 @@ namespace NIP.Models
 {
     public class BusinessViewModel
     {
-        [HiddenInput]
-        public int Id { get; set; }
-
         [DisplayName("Nazwa")]
         public string Name { get; set; }
 
@@ -22,8 +19,5 @@ namespace NIP.Models
 
         [DisplayName("Miasto")]
         public string City { get; set; }
-        public string KRS { get; set; }
-        public string NIP { get; set; }
-        public string REGON { get; set; }
     }
 }
